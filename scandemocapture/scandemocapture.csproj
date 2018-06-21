@@ -101,6 +101,7 @@
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
     <None Include="README.md" />
+    <None Include="LICENSE" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
