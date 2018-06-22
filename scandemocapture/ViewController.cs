@@ -273,6 +273,7 @@ namespace scandemocapture
                     Console.WriteLine("Device.GetNotificationsAsync did not work.");
                 }
                 //DoScannerConnect();
+#endif
             }
             else
             {
@@ -280,16 +281,10 @@ namespace scandemocapture
                 // assigning the DeviceArrival handler will cause Capture
                 // to notify us if a scanner is connected.
 
-                Console.WriteLine("We already have a scanner connected!!");
-
-                // Assign power info handlers
-
-                //CurrentDevice.DeviceBatteryLevel += OnDeviceBatteryLevel;
-                //CurrentDevice.DevicePowerState += OnDevicePowerState;
-
-#endif
-
+                Console.WriteLine("We already have a scanner connected!! Closing...");
+                await arrivedDevice.CaptureDevice.CloseAsync();
             }
+
             Console.WriteLine("End ScannerConnect()");
         }
 

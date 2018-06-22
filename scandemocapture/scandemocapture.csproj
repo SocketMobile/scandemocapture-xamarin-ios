@@ -82,7 +82,7 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Json" />
     <Reference Include="capture-xamarin-ios">
-      <HintPath>..\packages\SocketMobile.Capture.Xamarin.iOS.1.0.25\lib\xamarinios10\capture-xamarin-ios.dll</HintPath>
+      <HintPath>..\packages\SocketMobile.Capture.Xamarin.iOS.1.0.33.32\lib\xamarinios10\capture-xamarin-ios.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
